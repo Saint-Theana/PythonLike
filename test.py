@@ -1,17 +1,3 @@
-#this is a python like script language written in java using antlr4
-
-build antlr parser/lexers:
-```shell
-java -jar libs/antlr4-4.8-1-complete.jar -visitor -no-listener PythonLike.g4 -o src/com/sainttheana/pythonlike/antlr4/
-```
-
-run test:
-```shell
-make run
-```
-
-example code:
-```python
 def main(args):
     testMethod(args[0])
     testObject()
@@ -57,4 +43,3 @@ def testFor(args):
 def arraySize(array):
     import java.lang.reflect.Array
     return Array.getLength(array);
-```

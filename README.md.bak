@@ -2,12 +2,12 @@
 
 build antlr parser/lexers:
 ```shell
-java -jar libs/antlr4-4.8-1-complete.jar -visitor -no-listener PythonLike.g4 -o src/com/sainttheana/pythonlike/antlr4/
+    java -jar libs/antlr4-4.8-1-complete.jar -visitor -no-listener PythonLike.g4 -o src/com/sainttheana/pythonlike/antlr4/
 ```
 
 run test:
 ```shell
-make run
+    make run
 ```
 
 example code:
