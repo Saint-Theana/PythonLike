@@ -58,3 +58,15 @@ def arraySize(array):
     import java.lang.reflect.Array
     return Array.getLength(array);
 ```
+
+use of interpretor
+```java
+ANTLRInputStream input = new ANTLRInputStream(new FileInputStream("test.py"));
+PythonLikeLexer lexer = new PythonLikeLexer(input);
+CommonTokenStream tokens = new CommonTokenStream(lexer);
+PythonLikeParser parser = new PythonLikeParser(tokens);
+ParseTree tree = parser.program();
+Interpretor  y = new Interpretor();
+y.visit(tree);
+y.callFunction("main",((Object)k));
+```
